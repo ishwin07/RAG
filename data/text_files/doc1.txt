@@ -1,0 +1,8 @@
+RAG Intoduction
+    Retrieval-Augmented Generation (RAG) is a technique used to enhance large language models by combining text generation with information retrieval. Instead of relying only on the knowledge stored inside the model during training, RAG systems dynamically fetch relevant information from external data sources before generating a response.
+
+In a typical RAG pipeline, documents such as PDFs, text files, or web pages are first loaded and converted into a structured format. These documents are then split into smaller chunks to ensure efficient processing. Each chunk is transformed into a numerical representation called an embedding, which captures the semantic meaning of the text.
+
+When a user asks a question, the query is also converted into an embedding and compared against the stored document embeddings using a vector similarity search. The most relevant chunks are retrieved and passed to a language model as additional context. This allows the model to produce more accurate, up-to-date, and context-aware answers.
+
+RAG is especially useful in applications like chatbots, question-answering systems, and enterprise knowledge assistants, where factual accuracy and domain-specific information are critical. By grounding model responses in retrieved documents, RAG helps reduce hallucinations and improves trustworthiness.
